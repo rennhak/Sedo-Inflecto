@@ -188,7 +188,12 @@ class SmoothingSpline
 
     # Split each line and append into subarray of result at right index
     input.each_with_index do |column_value, column_index|
-      components = column_value.split( " " )
+      if column_value.is_a?(Array)
+        components = column_value
+      else
+        components = column_value.split( " " ) 
+      end
+
       components.collect! { |item| item.to_f }
 
       components.each_with_index do |row_value, row_index|
@@ -287,7 +292,7 @@ class SmoothingSpline
       y2[i] = yi
     end
 
-    GSL::graph([x, y], [x2, y2], "-T X -C -X x -Y y")
+    # GSL::graph([x, y], [x2, y2], "-T X -C -X x -Y y")
 
     return [x2, y2]
   end # }}}
@@ -309,7 +314,8 @@ if __FILE__ == $0
   # ap spline.cumulating_distance( index, t, tuple, tuple_next )
 
   # Read sample tdata
-  data = File.open( "../../data/3d/non_linear/tdata.gpdata", "r" ).readlines
+  #data = File.open( "../../data/3d/non_linear/tdata.gpdata", "r" ).readlines
+  data = File.open( ARGV.first, "r" ).readlines
   data = spline.clean( data )                     # remove \t, \n, etc.
   rows = spline.extract_rows( data )
   parameters = spline.parametrization( rows )
