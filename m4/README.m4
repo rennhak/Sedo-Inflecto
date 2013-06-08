@@ -1,13 +1,13 @@
-                                    SEDO INFLECTO
+                                  SEDO INFLECTO
                               Version esyscmd( `git describe --tags' )
 
 
 
 WHAT IS THE SEDO INFLECTO PROJECT ?
 
-The Sedo [1] Inflecto [2] project explores various smoothing functions [3] in multi-dimensions. Its purpose is
-to help understand various smoothing algorithms and how they are implemented as well as being a library to handle
-smoothing tasks.
+The Sedo [1] Inflecto [2] project explores various smoothing functions [3] for multi-dimensional
+curves and data. Its purpose is to help understand various smoothing algorithms and how they are
+implemented as well as being a library to handle smoothing and fitting tasks.
 
 [1] "Smooth" in Latin, http://www.latinwordlist.com/latin-word-for/latin-word-for-smooth-76362857.htm 
 [2] "Curve" in Latin, http://www.latinwordlist.com/latin-word-for/latin-word-for-curve-38591454.htm

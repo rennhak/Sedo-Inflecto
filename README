@@ -1,18 +1,18 @@
-                                    SEDO INFLECTO
-                              Version 0.0.1
+                                  SEDO INFLECTO
+                              Version 0.0.1-6-g106f7b1
 
 
 
 
 WHAT IS THE SEDO INFLECTO PROJECT ?
 
-The Sedo [1] Inflecto [2] project explores various smoothing function in multi-dimensions. Its purpose is
-to help understand various smoothing algorithms and how they are implemented as well as being a library to handle
-smoothing tasks.
+The Sedo [1] Inflecto [2] project explores various smoothing functions [3] for multi-dimensional
+curves and data. Its purpose is to help understand various smoothing algorithms and how they are
+implemented as well as being a library to handle smoothing and fitting tasks.
 
 [1] "Smooth" in Latin, http://www.latinwordlist.com/latin-word-for/latin-word-for-smooth-76362857.htm 
 [2] "Curve" in Latin, http://www.latinwordlist.com/latin-word-for/latin-word-for-curve-38591454.htm
-
+[3] http://en.wikipedia.org/wiki/Smoothing
 
 FEATURES
 
@@ -20,7 +20,8 @@ FEATURES
   o  Application
 
   o  Feature Providing Base Libraries
-    o  MotionX - https://github.com/rennhak/motionx
+    o  GSL
+    o  NArray
 
   o  Supported Ressources
 
