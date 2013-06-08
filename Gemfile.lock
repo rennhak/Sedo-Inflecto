@@ -1,0 +1,98 @@
+GIT
+  remote: git://github.com/blaine/xmpp4r-simple.git
+  revision: 92e2cd0002ec3a9a38506527e1a3a2d622408626
+  specs:
+    xmpp4r-simple (0.8.8)
+      xmpp4r (>= 0.3.2)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    amq-client (1.0.2)
+      amq-protocol (>= 1.2.0)
+      eventmachine
+    amq-protocol (1.6.0)
+    amqp (1.0.2)
+      amq-client (~> 1.0.2)
+      amq-protocol (>= 1.3.0)
+      eventmachine
+    andand (1.3.3)
+    awesome_print (1.1.0)
+    builder (3.2.2)
+    capybara (2.1.0)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (~> 2.0)
+    cobravsmongoose (0.0.2)
+    coderay (1.0.9)
+    cucumber (1.3.2)
+      builder (>= 2.1.2)
+      diff-lcs (>= 1.1.3)
+      gherkin (~> 2.12.0)
+      multi_json (~> 1.3)
+    diff-lcs (1.2.4)
+    eventmachine (1.0.3)
+    ffi (1.8.1)
+    gherkin (2.12.0)
+      multi_json (~> 1.3)
+    htmlentities (4.3.1)
+    listen (1.1.6)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+      rb-kqueue (>= 0.2)
+    mime-types (1.23)
+    msgpack (0.5.5)
+    multi_json (1.7.6)
+    nokogiri (1.5.10)
+    oj (2.0.14)
+    ox (2.0.2)
+    rack (1.5.2)
+    rack-test (0.6.2)
+      rack (>= 1.0)
+    rake (10.0.4)
+    rb-fsevent (0.9.3)
+    rb-inotify (0.9.0)
+      ffi (>= 0.5.0)
+    rb-kqueue (0.2.0)
+      ffi (>= 0.5.0)
+    redcarpet (2.3.0)
+    rerun (0.8.1)
+      listen (>= 1.0.3)
+    rspec (2.13.0)
+      rspec-core (~> 2.13.0)
+      rspec-expectations (~> 2.13.0)
+      rspec-mocks (~> 2.13.0)
+    rspec-core (2.13.1)
+    rspec-expectations (2.13.0)
+      diff-lcs (>= 1.1.3, < 2.0)
+    rspec-mocks (2.13.1)
+    xmpp4r (0.5)
+    xpath (2.0.0)
+      nokogiri (~> 1.3)
+    yumlcmd (0.0.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  amqp
+  andand
+  awesome_print
+  capybara
+  cobravsmongoose
+  coderay
+  cucumber
+  htmlentities
+  msgpack
+  nokogiri
+  oj
+  ox
+  rake
+  redcarpet
+  rerun
+  rspec
+  xmpp4r
+  xmpp4r-simple!
+  yumlcmd
