@@ -26,6 +26,9 @@ require 'optparse/time'
 require 'ostruct'
 require 'awesome_print'
 
+# Local
+require_relative 'lib/logger'
+
 # }}}
 
 
