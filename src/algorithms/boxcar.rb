@@ -11,40 +11,13 @@
 #######
 
 
-# Standard includes
-require 'narray'
-require 'gsl'
-
-# Local includes
-require 'logger.rb'
-require 'mathematics.rb'
-
-# Change Namespace
-include GSL
-
-
 # @class      Class Boxcar
 # @brief      The class Boxcar takes input data an applies a Boxcar Impulse Response FIlter on it.
 class Boxcar
 
-  # @fn       def initialize options, from, to # {{{
-  # @brief    Custom constructor for the Filter class
-  #
-  # @param    [OpenStruct]      options     OpenStruct containing options parsed
-  # @param    [Integer]         from        From frame int
-  # @param    [Integer]         to          To frame int
-  def initialize options = nil, from = nil, to = nil
-
-    # Input verification {{{
-    raise ArgumentError, "Options cannot be nil"  if( options.nil? )
-    raise ArgumentError, "From cannot be nil"     if( from.nil? )
-    raise ArgumentError, "To cannot be nil"       if( to.nil? )
-    # }}}
-
-    @options             = options
-    @from, @to           = from, to
-    @log                 = Logger.new( @options )
-    @mathematics         = Mathematics.new
+  # @fn       def initialize  # {{{
+  # @brief    Custom constructor for the Boxcar class
+  def initialize
   end # of def initialize }}}
 
   # @fn       def box_car_filter input, order = 5 # {{{
@@ -102,7 +75,6 @@ class Boxcar
     result = ( input.collect { |a,b| a } ).zip( y )
     result
 
-#
 #    0.upto( x.length - 1 ) do |n|
 #
 #      sum = 0
