@@ -29,7 +29,7 @@ require 'awesome_print'
 # }}}
 
 
-# @class      class Controller # {{{
+# @class      class Controller
 # @brief      Central controller class taking care of input argument handling and providing a basic CLI user interface
 class Controller
 
@@ -157,7 +157,7 @@ class Controller
       EOS
   end # end of learn( method, code ) }}}
 
-end # of class Controller }}}
+end # of class Controller
 
 
 # Direct Invocation (local testing) # {{{

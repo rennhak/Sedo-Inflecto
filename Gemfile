@@ -30,6 +30,9 @@ group :default do # {{{
   gem 'nokogiri'
   gem 'cobravsmongoose'      # turn xml into json via standard
 
+  gem 'narray'
+  gem 'gsl'
+
 end # }}}
 
 # Development gems used only during development phase
