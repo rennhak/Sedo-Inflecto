@@ -11,10 +11,11 @@ set zlabel 'Z'
 set autoscale
 set font 'arial'
 set key left box
+set nokey
 set hidden3d
 set output
 set terminal x11 persist
-set title 'Graph'
+set title 'B-Spline Smoothing of T-Data'
 
 # Styles
 set palette rgbformulae 22,12,-32

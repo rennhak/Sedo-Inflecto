@@ -8,7 +8,7 @@ source "http://rubygems.org"
 
 
 # Depend on a certain ruby version
-ruby '2.0.0'
+# ruby '2.0.0'
 
 
 # Default gems used during other phases such as production or development, etc.
